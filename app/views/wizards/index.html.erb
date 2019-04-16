@@ -1,0 +1,7 @@
+<h1>THE GREAT LIST OF WIZARDS</h1>
+
+<% @wizards.each do |wizard| %>
+<li>
+ <%= link_to wizard.name, wizard_path(wizard) %> | <%= wizard.age %> | <%= wizard.magic %>
+</li>
+<% end %>
